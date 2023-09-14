@@ -1,0 +1,21 @@
+function setup() {
+//Resolucion Estandar
+createCanvas(1280,720);
+
+//Imagen Menu Principal
+img = loadImage('Img/Fondo/FondoMenu.png');
+
+//Boton Jugar
+button = 
+  button.position(400, 520);
+  button.size(200, 70);
+  button.style("font-family", "Chiller");
+  button.style("font-size", "50px");
+
+}
+
+
+function draw() {
+  background(220);
+  image(img, 0, 0);
+}
