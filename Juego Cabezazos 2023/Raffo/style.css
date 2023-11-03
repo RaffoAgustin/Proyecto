@@ -1,0 +1,487 @@
+body {
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+#contenedor{
+background-color: rgb(123, 123, 123);
+width:1280px;
+height:720px;
+position: fixed;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+}
+/*---------------------------------------------------------------------------------------------------------*/
+
+#menuprincipal{
+width:1280px;
+height:720px;
+position: fixed;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+background-image: url('Img/Fondo/FondoMenu.gif');
+z-index:1;
+}
+
+/*Boton Jugar --> Menu Principal*/
+.btnjugar{
+  margin-left: 360px;
+  margin-top: 515px;
+  color: aqua;
+  font-family: Chiller;
+  font-size: 50px;
+  border-radius: 20px;
+  color:white;
+  background-color: black;
+  opacity: 0.8;
+  border: solid 0px;
+  width: 200px;
+  text-align: center;
+}
+
+.btnjugar:hover{
+  opacity: unset;
+  transition: 0.3s;
+  transform: scale(1.2);
+}
+
+.btnCreditos{
+  margin-left: 200px;
+  margin-top: 515px;
+  font-family: Chiller;
+  font-size: 50px;
+  border-radius: 20px;
+  color:white;
+  background-color: black;
+  opacity: 0.8;
+  border: solid 0px;
+  width: 200px;
+  text-align: center;
+}
+
+.btnCreditos:hover{
+  opacity: unset;
+  transition: 0.3s;
+  transform: scale(1.2);
+}
+
+/*--------------------------------------------------------*/
+
+/*Sala de Persones*/
+.personajefondo{
+  display: none;
+  position: absolute;
+  margin-top: 370px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  width: 700px;
+  height: 450px;
+  background-color: black;
+  border: solid 1px white;
+  border-radius: 20px;
+  opacity: 0.8;
+}
+
+.personajefondo:hover{
+  opacity: unset;
+}
+
+.imagenfuegoizquierdo{
+  margin-top: 20%;
+  display: none;
+  position:absolute;
+  z-index: 1;
+}
+
+.imagenfuegoderecho{
+  margin-top: 20%;
+  margin-left: 73%;
+  display: none;
+  position: absolute;
+  z-index: 1;
+}
+
+/*Personajes*/
+
+.contenedor-personajes{
+  padding: 3px;
+  margin-top: 25px;
+}
+/*Columna 1*/
+
+/*----------------------------------------------------------------*/
+
+.personajeGareis{
+  margin-left: 2%;
+  list-style: none;
+  font-size: 50px;
+  margin-top: 20px;
+  position:absolute;
+  z-index: 1;
+  cursor: pointer;
+  color: white;
+}
+
+.gareisnormal{
+  display: none;
+  margin-left: -2%;
+  margin-top: 15%;
+  position:absolute;
+  z-index: 1;
+  cursor: pointer;
+  color: white;
+}
+
+
+.personajeCalderone{
+  margin-left: -3%;
+  list-style: none;
+  font-size: 50px;
+  margin-top: 100px;
+  position:absolute;
+  z-index: 1;
+  cursor: pointer;
+  color: white;
+}
+
+.calderonenormal{
+  filter: none;
+  width: 400px;
+  display: none;
+  margin-left: -2%;
+  margin-top: 16%;
+  position:absolute;
+  z-index: 1;
+  cursor: pointer;
+  color: white;
+}
+
+.personajeZalazar{
+  margin-left: 2%;
+  list-style: none;
+  font-size: 50px;
+  margin-top: 170px;
+  position:absolute;
+  z-index: 1;
+  cursor: pointer;
+  color: white;
+}
+
+.terenormal{
+  width: 400px;
+  display: none;
+  margin-left: -2%;
+  margin-top: 15%;
+  position:absolute;
+  z-index: 1;
+  cursor: pointer;
+  color: white;
+}
+
+
+.personajeDanzi{
+  margin-left: 2%;
+  list-style: none;
+  font-size: 50px;
+  margin-top: 240px;
+  position:absolute;
+  z-index: 1;
+  cursor: pointer;
+  color: white;
+}
+
+/*Columna 2*/
+
+.personajeAvalos{
+  margin-left: 26%;
+  list-style: none;
+  font-size: 50px;
+  position:absolute;
+  z-index: 1;
+  color: white;
+  cursor: pointer;
+}
+
+.avalosnormal{
+  width: 400px;
+  display: none;
+  margin-left: -2%;
+  margin-top: 15%;
+  position:absolute;
+  z-index: 1;
+  cursor: pointer;
+  color: white;
+}
+
+
+.personajeAragon{
+  margin-top: 83px;
+  margin-left: 26%;
+  list-style: none;
+  font-size: 50px;
+  position:absolute;
+  z-index: 1;
+  color: white;
+  cursor: pointer;
+}
+
+.aragonnormal{
+  width: 400px;
+  display: none;
+  margin-left: -2%;
+  margin-top: 15%;
+  position:absolute;
+  z-index: 1;
+  cursor: pointer;
+  color: white;
+}
+
+.personajePolech{
+  margin-top: 170px;
+  margin-left: 27%;
+  list-style: none;
+  font-size: 50px;
+  position:absolute;
+  z-index: 1;
+  color: white;
+  cursor: pointer;
+}
+
+
+.polechnormal{
+  width: 400px;
+  display: none;
+  margin-left: -2%;
+  margin-top: 17%;
+  position:absolute;
+  z-index: 1;
+  cursor: pointer;
+  color: white;
+}
+
+.personajeGonzalez{
+  margin-top: 260px;
+  margin-left: 24%;
+  list-style: none;
+  font-size: 50px;
+  position:absolute;
+  z-index: 1;
+  color: white;
+  cursor: pointer;
+}
+
+.gonzaleznormal{
+  width: 400px;
+  display: none;
+  margin-left: -2%;
+  margin-top: 17%;
+  position:absolute;
+  z-index: 1;
+  cursor: pointer;
+  color: white;
+}
+
+/*Columna 3*/
+
+.personajeCallamullo{
+  margin-top: 15px;
+  margin-left: 47%;
+  list-style: none;
+  font-size: 50px;
+  position:absolute;
+  z-index: 1;
+  color: white;
+  cursor: pointer;
+}
+
+.callamullonormal{
+  display: none;
+  margin-left: -2%;
+  margin-top: 16%;
+  position:absolute;
+  z-index: 1;
+  cursor: pointer;
+  color: white;
+}
+
+.personajeBasterra{
+  margin-top: 99px;
+  margin-left: 51%;
+  list-style: none;
+  font-size: 50px;
+  position:absolute;
+  z-index: 1;
+  color: white;
+  cursor: pointer;
+}
+
+.basterranormal{
+  width: 400px;
+  display: none;
+  margin-left: -2%;
+  margin-top: 18%;
+  position:absolute;
+  z-index: 1;
+  cursor: pointer;
+  color: white;
+}
+
+.personajeFerraro{
+  margin-top: 185px;
+  margin-left: 53%;
+  list-style: none;
+  font-size: 50px;
+  position:absolute;
+  z-index: 1;
+  color: white;
+  cursor: pointer;
+}
+
+.personajeSafi{
+  margin-top: 260px;
+  margin-left: 57%;
+  list-style: none;
+  font-size: 50px;
+  position:absolute;
+  z-index: 1;
+  color: white;
+  cursor: pointer;
+}
+
+.safinormal{
+  width: 400px;
+  display: none;
+  margin-left: -2%;
+  margin-top: 18%;
+  position:absolute;
+  z-index: 1;
+  cursor: pointer;
+  color: white;
+}
+
+.columna1{
+display: inline-block;
+}
+
+
+.columna2{
+display: inline-block ;
+}
+
+.columna3{
+  display: inline-block;
+}
+
+.columna4{
+  display: inline-block;
+}
+
+.btnPelear{
+  margin-left: 39%; 
+  display: none;
+  position: absolute;
+  z-index: 1;
+  margin-top: 620px;
+  font-family: Chiller;
+  font-size: 50px;
+  border-radius: 20px;
+  color:white;
+  background-color: black;
+  border: solid 0px;
+  width: 300px;
+  text-align: center;
+}
+
+/*Vida Personaje*/
+#health-bar {
+  margin: 10px;
+  display: none;
+  width: 500px;
+  position: absolute;
+  height: 20px;
+  background-color: #ccc;
+  z-index: 1;
+}
+
+#vidajugador {
+  position: absolute;
+  z-index: 1;
+  width: 500px;
+  height: 100%;
+  background-color: rgb(46, 219, 46);
+}
+
+/*Vida Oponente*/
+.avida{
+  margin: 10px;
+  margin-left: 770px;
+}
+#health-bar2 {
+  float: inline-end;
+  display: none;
+  width: 500px;
+  position: absolute;
+  height: 20px;
+  background-color: #ccc;
+  z-index: 1;
+}
+
+#vidaoponente {
+  position: absolute;
+  z-index: 1;
+  width: 500px;
+  height: 100%;
+  background-color: rgb(46, 219, 46);
+}
+
+
+/*Resultados de la Batalla*/
+.final{
+  display: none;
+}
+
+.result{
+  display: inline-flex;
+  position: absolute;
+  margin-top: 390px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  width: 1000px;
+  height: 500px;
+  background-color: black;
+  border: solid 1px white;
+  border-radius: 20px;
+  opacity: 0.8;
+}
+
+.result:hover{
+  opacity: unset;
+}
+
+.result h1{
+  text-align: center;
+  color: white;
+}
+
+.cabezaoponente{
+  margin-left: 0%;
+}
+
+.cabezaopo{
+  transform: scaleX(-1);
+}
+
+.info-result{
+  text-align: center;
+  color: white;
+  font-size: 25px;
+}
+
+.info-result h1{
+  text-align: center;
+}
